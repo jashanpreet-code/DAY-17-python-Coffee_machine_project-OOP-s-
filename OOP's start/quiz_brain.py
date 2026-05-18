@@ -5,8 +5,19 @@ class quiz:
         self.question_number = 0
 
     def more_question(self):
-        return self.question_number <= len(self.q_list)
-
+        if self.question_number < len(self.q_list):
+            print(f"your current score is {self.score} / {self.question_number}")
+            return True
+        play = input("if you to play agin 'y' if not 'n'" )
+        if play.lower() == 'y':
+            self.question_number = 0
+            self.score = 0
+            next_question()
+            return False
+        else:
+            print("thank you for playing")
+            return True
+    
     def next_question(self):
         current_question = self.q_list[self.question_number]
         self.question_number += 1

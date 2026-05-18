@@ -50,9 +50,21 @@
 import random
 import data as d
 from Question_object import Question
-from quiz_brain import quiz
+from quiz_brain import quiz as qz
 
 quesiton_bank = []
+
+for i in d.question_data:
+    question_text = i['text']
+    question_answer = i['answer']
+    new_question = Question(question_text,question_answer)
+    quesiton_bank.append(new_question)
+    
+quiz = qz(quesiton_bank)
+
+while quiz.more_question():
+    quiz.next_question()
+
 
 
 
