@@ -8,15 +8,14 @@ class quiz:
         if self.question_number < len(self.q_list):
             print(f"your current score is {self.score} / {self.question_number}")
             return True
-        play = input("if you to play agin 'y' if not 'n'" )
+        play = input("if you to play agin 'y' if not 'n' or 'Press Enter' " )
         if play.lower() == 'y':
             self.question_number = 0
             self.score = 0
-            next_question()
-            return False
+            return True
         else:
             print("thank you for playing")
-            return True
+            return False
     
     def next_question(self):
         current_question = self.q_list[self.question_number]
