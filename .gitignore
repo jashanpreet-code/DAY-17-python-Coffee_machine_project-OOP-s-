@@ -1,0 +1,13 @@
+.venv/
+coffie_machine/
+extra's/
+insta_follwer_game/
+OOP's start/# Ignore the virtual environment
+.venv/
+
+# Ignore these other project folders
+extra's/
+insta_follwer_game/
+OOP's start/
+coffee_machine_OOP/
+.idea/
