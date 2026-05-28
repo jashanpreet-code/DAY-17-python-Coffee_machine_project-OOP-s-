@@ -1,16 +1,15 @@
 class resourse:
-    def __init__(self,milk,coffe,water,shugar):
-        self.milk = 500
-        self.water = 500
-        self.shugar = 200
-        self.coffe = 100
+    def __init__(self,res):
+        self.res = {
+            "milk" : 500,
+            "coffe" : 200,
+            "shugar" : 200,
+        }
         
         
-class makeing(resourse):
-    def __init__():
-        pass
-    
-    def report():
+    def report(self):
         print("REPORT OF RESOURCES IN MACHINE:- \n")
-        print("MILK = {self.milk}")
+        print(f"MILK = {self.res['milk']}")
+        print(f"COFFEE = {self.res['coffe']}")
+        print(f"SHUGAR = {self.res['shugar']}")
     
