@@ -1,5 +1,5 @@
 class resourse:
-    def __init__(self,res):
+    def __init__(self):
         self.res = {
             "milk" : 500,
             "coffe" : 200,
@@ -8,7 +8,7 @@ class resourse:
         
         
     def report(self):
-        print("REPORT OF RESOURCES IN MACHINE:- \n")
+        print("REPORT OF RESOURCES IN MACHINE:-")
         print(f"MILK = {self.res['milk']}")
         print(f"COFFEE = {self.res['coffe']}")
         print(f"SHUGAR = {self.res['shugar']}")

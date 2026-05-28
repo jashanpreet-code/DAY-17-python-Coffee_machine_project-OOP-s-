@@ -2,10 +2,14 @@ from menu_items import coffes as cfm
 from coffee_maker import resourse as rs
 
 
-print(cfm.make_latte)
+print("ENTER START TO MAKE COFFEE 'START':")
+print(f"choice one of these coffes:")
 
 
-ad = rs.report
-print(ad)
+ad = rs()
+ad.report()
+
+sd = cfm()
+sd.get_items()
 
     
