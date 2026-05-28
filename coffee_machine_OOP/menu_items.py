@@ -10,4 +10,14 @@ class coffes:
         self.shugar = 10
         self.coffe = 5
         
-    
+    def make_cappuccino(self,milk,water,shugar,coffe):
+        self.milk = 30
+        self.water = 20
+        self.shugar = 15
+        self.coffe = 12
+        
+    def make_expresso(self,milk,water,shugar,coffe):
+        self.milk = 30
+        self.water = 20
+        self.shugar = 10
+        self.coffe = 15
