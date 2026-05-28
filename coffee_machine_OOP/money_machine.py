@@ -7,6 +7,9 @@ class money_control:
     def proffite_report(self):
         print(f"Money: ${self.profittes}")
         
+    def payment_check:
+        
+        
     
         
         
