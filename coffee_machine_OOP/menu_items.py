@@ -18,8 +18,10 @@ class items:
         
     def get_items(self):
         print("MENU :-")
+        options = ""
         for item in self.menu:
-            print(item.name)
+            optinos += f"{item.name}"
+        return options
        
         
     def make_expresso(self):

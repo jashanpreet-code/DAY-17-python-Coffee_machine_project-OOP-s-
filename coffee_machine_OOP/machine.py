@@ -11,17 +11,17 @@ if reports == "money":
 elif reports == "resourse":
     rs.report
 else:
-    pass
-print("choice one of these coffes:")
+    print("CHOICE ONE OF THESE COFFES:")
+    it.get_items
 
 
 # ad = rs()
 # ad.report()
 
 # sd = cfm(milk = 30, sugar = 10, coffee =5, coffe_name = "latte",cost = 40)
-it.get_items()
+# it.get_items()
 
 order = input("WHICH COFFEE DO YOU WANT NAME IT := ")
-rs.check_resources(order)
+# rs.check_resources(order)
 
     
