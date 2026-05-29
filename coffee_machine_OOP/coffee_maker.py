@@ -1,3 +1,4 @@
+# from menu_items import coffes as cf
 class resourse:
     def __init__(self):
         self.res = {
@@ -12,3 +13,6 @@ class resourse:
         print(f"COFFEE = {self.res['coffe']}")
         print(f"SHUGAR = {self.res['shugar']}")
     
+    # def check_resources(order):
+    #  pass
+        

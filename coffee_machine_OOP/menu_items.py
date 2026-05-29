@@ -1,24 +1,25 @@
-class coffes:
-    def __init__(self,milk,sugar,coffee,coffe_name,cost):
+class menu:
+    def __init__(self,milk,sugar,coffee,name,cost):
+        self.name = name
         self.milk = milk
         self.sugar = sugar
         self.coffee = coffee
-        self.coffe_name = coffe_name
         self.cost = cost
-        self.menu = {}
         
-    def menus(self):
+        
+class items:
+    def __init__(self):
         self.menu = [
-            "latte" : {"milk" : 30, "sugar" : 10, "coffee" : 5, "cost" : 40},
-            "cappuccino" : {"milk" : 30, "sugar" : 5, "coffee" : 5, "cost" :50},
-            "lattee" : {"milk" : 40, "sugar" : 10, "coffee" : 3, "cost" : 60}
+            menu(name = "latte" ,milk = 30, sugar = 10, coffee = 5, cost = 40),
+            menu(name = "cappuccino" , milk = 30, sugar = 5, coffee = 5, cost = 50),
+            menu(name = "lattee" , milk = 40, sugar = 10, coffee = 3, cost = 60)
         ]
      
         
     def get_items(self):
         print("MENU :-")
         for item in self.menu:
-            print(item)
+            print(item.name)
        
         
     def make_expresso(self):
