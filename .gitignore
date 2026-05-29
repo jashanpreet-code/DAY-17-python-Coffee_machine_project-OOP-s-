@@ -1,12 +1,14 @@
-.venv/
-coffie_machine/
-extra's/
-insta_follwer_game/
-OOP's start/# Ignore the virtual environment
+# Python Virtual Environment
 .venv/
 
-# Ignore these other project folders
+# PyCharm configuration files
+.idea/
+
+# Python Bytecode (Junk files)
+*.pyc
+__pycache__/
+
+# Other projects you want to keep hidden from GitHub
 extra's/
 insta_follwer_game/
 OOP's start/
-.idea/

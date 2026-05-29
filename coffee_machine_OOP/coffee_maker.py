@@ -6,7 +6,6 @@ class resourse:
             "shugar" : 200,
         }
         
-        
     def report(self):
         print("REPORT OF RESOURCES IN MACHINE:-")
         print(f"MILK = {self.res['milk']}")

@@ -5,22 +5,22 @@ class coffes:
         self.coffee = coffee
         self.coffe_name = coffe_name
         self.cost = cost
-        
-
+        self.menu = {}
         
     def menus(self):
-        self.menu = {
+        self.menu = [
             "latte" : {"milk" : 30, "sugar" : 10, "coffee" : 5, "cost" : 40},
             "cappuccino" : {"milk" : 30, "sugar" : 5, "coffee" : 5, "cost" :50},
             "lattee" : {"milk" : 40, "sugar" : 10, "coffee" : 3, "cost" : 60}
-        }
-    
+        ]
+     
         
     def get_items(self):
         print("MENU :-")
-        for i in self.menu:
-            print(i.keys)
+        for item in self.menu:
+            print(item)
        
         
     def make_expresso(self):
      pass
+ 
