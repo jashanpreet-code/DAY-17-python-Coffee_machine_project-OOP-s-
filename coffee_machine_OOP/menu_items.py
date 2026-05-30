@@ -1,4 +1,4 @@
-class menu:
+class menu_itemz:
     def __init__(self,milk,sugar,coffee,name,cost):
         self.name = name
         self.milk = milk
@@ -10,20 +10,26 @@ class menu:
 class items:
     def __init__(self):
         self.menu = [
-            menu(name = "latte" ,milk = 30, sugar = 10, coffee = 5, cost = 40),
-            menu(name = "cappuccino" , milk = 30, sugar = 5, coffee = 5, cost = 50),
-            menu(name = "lattee" , milk = 40, sugar = 10, coffee = 3, cost = 60)
+            menu_itemz(name = "latte" ,milk = 30, sugar = 10, coffee = 5, cost = 40),
+            menu_itemz(name = "cappuccino" , milk = 30, sugar = 5, coffee = 5, cost = 50),
+            menu_itemz(name = "expresso" , milk = 40, sugar = 10, coffee = 3, cost = 60)
         ]
+     
      
         
     def get_items(self):
         print("MENU :-")
         options = ""
         for item in self.menu:
-            optinos += f"{item.name}"
+            options += f"{item.name} \t"
         return options
        
         
-    def make_expresso(self):
-     pass
+    def find_drink(self,order):
+        for item in self.menu:
+            if order == item.name:
+                return item
+        # not found
+        print("we don't have this drink")
+        return None
  
