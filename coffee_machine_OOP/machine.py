@@ -8,8 +8,6 @@ req = resourse()
 cash = cash_system()
 working = True
 while working:
-    starter = input("ENTER START TO MAKE COFFEE 'START':").lower()
-    reports = input("IF YOU WANT THE RESOURSE REPORT JUST WRITE 'resourse' AND IF YOU WANT MONEY REPORT ENTER 'money':=").lower()
     print(f"{menus.get_items()}")
     order = input("WHICH COFFEE DO YOU WANT NAME IT := ")
     if order == "off":
@@ -18,9 +16,11 @@ while working:
         req.report()
     drink = menus.find_drink(order)
     if req.check_resources(drink) == True:
-        print(f"you have to pay {drink.cost}")
-        ad = drink.cost
-        cash.payment_check(ad)
+        print(f"you have to pay {cash.CURRENCY}{drink.cost}")
+    if cash.payment_process(drink.cost) == False:
+        working = False
+    print("asf")
+    req.coffe_maker(drink)
         
         
         

@@ -25,7 +25,13 @@ class resourse:
             return False
         else:
             return True
+     
+    def coffe_maker(self,drink):
+        self.res['milk'] -= drink.milk
+        self.res['sugar'] -= drink.sugar
+        self.res['coffe'] -= drink.coffee
+        print(f"here's your {drink.name} ☕")
             
-            
+         
         
         
