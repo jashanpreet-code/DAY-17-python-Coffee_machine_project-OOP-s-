@@ -5,14 +5,27 @@ from money_machine import cash_system
 
 menus = items()
 req = resourse()
-
-while True:
+cash = cash_system()
+working = True
+while working:
     starter = input("ENTER START TO MAKE COFFEE 'START':").lower()
     reports = input("IF YOU WANT THE RESOURSE REPORT JUST WRITE 'resourse' AND IF YOU WANT MONEY REPORT ENTER 'money':=").lower()
     print(f"{menus.get_items()}")
     order = input("WHICH COFFEE DO YOU WANT NAME IT := ")
+    if order == "off":
+        working = False
+    elif order == "report":
+        req.report()
     drink = menus.find_drink(order)
-    req.check_resources(drink)
+    if req.check_resources(drink) == True:
+        print(f"you have to pay {drink.cost}")
+        ad = drink.cost
+        cash.payment_check(ad)
+        
+        
+        
+        
+        
     
     # if reports == "money":
     #     mc.proffite_report

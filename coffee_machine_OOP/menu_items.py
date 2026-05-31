@@ -10,9 +10,9 @@ class menu_itemz:
 class items:
     def __init__(self):
         self.menu = [
-            menu_itemz(name = "latte" ,milk = 30, sugar = 10, coffee = 5, cost = 40),
-            menu_itemz(name = "cappuccino" , milk = 30, sugar = 5, coffee = 5, cost = 50),
-            menu_itemz(name = "expresso" , milk = 40, sugar = 10, coffee = 3, cost = 60)
+            menu_itemz(name = "latte" ,milk = 30, sugar = 10, coffee = 5, cost = 7),
+            menu_itemz(name = "cappuccino" , milk = 30, sugar = 5, coffee = 5, cost = 6),
+            menu_itemz(name = "expresso" , milk = 40, sugar = 10, coffee = 3, cost = 5)
         ]
      
      
@@ -29,7 +29,6 @@ class items:
         for item in self.menu:
             if order == item.name:
                 return item
-        # not found
         print("we don't have this drink")
         return None
  

@@ -16,7 +16,8 @@ class cash_system:
     def proffite_report(self):
         print(f"Money: ${self.profit}")
         
-    def payment_check(self):
+    def payment_check(self,cost):
+        
         
         
         
